@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OUATTARA Kinon Marc Désiré — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR FIXE -->
+  <nav class="navbar" id="navbar">
+    <a href="#accueil" class="navbar__logo">OKMD<span class="navbar__logo-dot">.</span></a>
+    <ul class="navbar__links">
+      <li><a href="#accueil" class="navbar__link active">Accueil</a></li>
+      <li><a href="#a-propos" class="navbar__link">À propos</a></li>
+      <li><a href="#competences" class="navbar__link">Compétences</a></li>
+      <li><a href="#projets" class="navbar__link">Projets</a></li>
+      <li><a href="#experience" class="navbar__link">Expérience</a></li>
+      <li><a href="#contact" class="navbar__link">Contact</a></li>
+    </ul>
+    <a href="#contact" class="btn btn--primary btn--sm">Me contacter</a>
+    <button class="navbar__burger" id="burger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="accueil">
+    <div class="hero__content reveal">
+      <span class="badge badge--green">
+        <span class="badge__dot badge__dot--green"></span>
+        Disponible pour de nouvelles opportunités
+      </span>
+      <div class="hero__text">
+        <h1 class="hero__name">OUATTARA Kinon<br/>Marc Désiré</h1>
+        <p class="hero__title">Développeur Data, IA &amp; Full-Stack | UI/UX Designer</p>
+        <p class="hero__location">
+          <svg width="16" height="16" fill="none" stroke="#94a3b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6.5c0 4-4.5 7.5-4.5 7.5S3 10.5 3 6.5a4.5 4.5 0 1 1 9 0z"/><circle cx="7.5" cy="6.5" r="1.5"/></svg>
+          Abidjan, Côte d'Ivoire
+        </p>
+      </div>
+      <div class="hero__cta">
+        <a href="#contact" class="btn btn--primary">Contactez-moi</a>
+        <a href="#" class="btn btn--outline">Télécharger CV</a>
+      </div>
+    </div>
+    <div class="hero__visual reveal reveal--delay-1">
+      <div class="hero__image-placeholder">
+        <img src="images/Photo profil.jpg" alt="OUATTARA Kinon Marc Désiré" />
+      </div>
+      <div class="hero__badges">
+        <span class="chip"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="12" height="12" rx="2"/><path d="M6 6h4M6 10h4M10 2v12"/></svg> Data &amp; AI Engineer</span>
+        <span class="chip"><svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="5" height="5"/><rect x="9" y="2" width="5" height="5"/><rect x="2" y="9" width="5" height="5"/><rect x="9" y="9" width="5" height="5"/></svg> UI/UX Specialist</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="about" id="a-propos">
+    <div class="about__image reveal">
+      <div class="about__image-placeholder">
+        <img src="images/Photo a propos.jpg" alt="À propos de Kinon Ouattara" />
+      </div>
+    </div>
+    <div class="about__content reveal reveal--delay-1">
+      <div class="section-header">
+        <span class="badge badge--cyan-outline">À propos</span>
+        <h2>Concevoir l'intelligence technologique de demain</h2>
+      </div>
+      <p class="text-muted">Développeur passionné, spécialisé en Data, Intelligence Artificielle et développement Full-Stack (Web &amp; Mobile). Mon objectif : concevoir des solutions technologiques complètes, intelligentes et sur-mesure pour répondre aux besoins réels des entreprises et des utilisateurs.</p>
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__number" data-count="5">0+</span>
+          <span class="stat__label">Projets livrés</span>
+        </div>
+        <div class="stat">
+          <span class="stat__number" data-count="1">0+</span>
+          <span class="stat__label">Années d'exp.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section class="skills" id="competences">
+    <div class="section-header section-header--center reveal">
+      <span class="badge badge--cyan-outline">Compétences</span>
+      <h2>Un savoir-faire pluridisciplinaire</h2>
+      <p class="text-muted">Du traitement intelligent de la donnée jusqu'à la création d'interfaces fluides et ergonomiques.</p>
+    </div>
+    <div class="skills__grid">
+      <div class="card reveal">
+        <div class="card__icon">
+          <svg width="24" height="24" fill="none" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><path d="M7 12h10M12 7v10"/></svg>
+        </div>
+        <h3>Data &amp; IA</h3>
+        <p>Cycle de vie des données (collecte, nettoyage, analyse), modélisation et intégration d'algorithmes de Machine Learning en Python.</p>
+      </div>
+      <div class="card reveal reveal--delay-1">
+        <div class="card__icon">
+          <svg width="24" height="24" fill="none" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Développement Web &amp; Mobile</h3>
+        <p>Applications modernes, fluides et performantes avec React et technologies mobiles réactives.</p>
+      </div>
+      <div class="card reveal reveal--delay-2">
+        <div class="card__icon">
+          <svg width="24" height="24" fill="none" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
+        <h3>Design UI/UX</h3>
+        <p>Maquettes ergonomiques et interfaces utilisateurs intuitives avec Figma.</p>
+      </div>
+      <div class="card reveal reveal--delay-3">
+        <div class="card__icon">
+          <svg width="24" height="24" fill="none" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 20V10M12 20V4M6 20v-6"/></svg>
+        </div>
+        <h3>Business Intelligence</h3>
+        <p>Tableaux de bord visuels et décisionnels avec Power BI. Git/GitHub et outils bureautiques avancés.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATOUT DIFFÉRENCIANT -->
+  <section class="differentiation" id="atout">
+    <div class="differentiation__content reveal">
+      <div class="section-header">
+        <span class="badge badge--cyan-outline">Atout différenciant</span>
+        <h2>La double culture : Humanités &amp; Technologie</h2>
+      </div>
+      <p class="text-muted">Mon parcours universitaire en Philosophie m'a doté d'une rigueur d'esprit exceptionnelle, d'une grande capacité d'abstraction, d'une excellente logique de raisonnement et d'une approche éthique de l'IA.</p>
+      <p class="text-muted">Cette double culture me permet d'aborder des architectures complexes avec méthode, esprit critique et autonomie, en créant de la technologie qui respecte l'éthique tout en maximisant la performance.</p>
+      <div class="differentiation__tags">
+        <span class="chip">Rigueur analytique</span>
+        <span class="chip">Approche éthique de l'IA</span>
+      </div>
+    </div>
+    <div class="differentiation__image reveal reveal--delay-1">
+      <div class="differentiation__image-placeholder">
+        <img src="images/Photo Atout différenciant.jpg" alt="Double culture Humanités et Technologie" />
+      </div>
+    </div>
+  </section>
+
+  <!-- TECHNOLOGIES -->
+  <section class="tech" id="technologies">
+    <div class="section-header section-header--center reveal">
+      <span class="badge badge--cyan-outline">Technologies &amp; Outils</span>
+      <h2>Ma stack technologique de prédilection</h2>
+      <p class="text-muted">Des outils fiables, modernes et robustes pour donner vie à vos projets les plus complexes.</p>
+    </div>
+    <div class="tech__grid">
+      <span class="tech__item reveal">🐍 Python</span>
+      <span class="tech__item reveal reveal--delay-1">&lt;/&gt; React</span>
+      <span class="tech__item reveal reveal--delay-1">◆ Figma</span>
+      <span class="tech__item reveal reveal--delay-2">📊 Power BI</span>
+      <span class="tech__item reveal reveal--delay-2">🔗 Git/GitHub</span>
+      <span class="tech__item reveal reveal--delay-3">🤖 Machine Learning</span>
+      <span class="tech__item reveal reveal--delay-3">&gt;_ JavaScript</span>
+      <span class="tech__item reveal reveal--delay-3">🗃 SQL</span>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section class="projects" id="projets">
+    <div class="section-header section-header--center reveal">
+      <span class="badge badge--cyan-outline">Projets</span>
+      <h2>Réalisations marquantes</h2>
+      <p class="text-muted">Un aperçu des architectures et produits conçus pour allier performance technique et utilité.</p>
+    </div>
+    <div class="projects__grid">
+      <!-- Projet 1 : CoWork-Flex -->
+      <article class="project-card reveal">
+        <div class="project-card__image">
+          <img src="images/projet 1 CoWork-Flex.jpg" alt="CoWork-Flex — Plateforme de coworking" />
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+          <h3>CoWork-Flex</h3>
+          <p>Plateforme de réservation d'espaces de coworking flexible. Gestion des salles, des créneaux horaires et des abonnements en temps réel pour une expérience de travail fluide et moderne.</p>
+          <a href="#" class="project-card__link">Voir le projet &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Projet 2 : Maison Arkai -->
+      <article class="project-card reveal reveal--delay-1">
+        <div class="project-card__image">
+          <img src="images/projet 2 Maison Arkai.jpg" alt="Maison Arkai — Site e-commerce immobilier" />
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span class="tag">React</span>
+            <span class="tag">E-commerce</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+          <h3>Maison Arkai</h3>
+          <p>Site e-commerce dédié à l'immobilier haut de gamme : catalogue de biens, système de filtres avancés, prise de rendez-vous en ligne et tunnel d'achat sécurisé pour une expérience client fluide.</p>
+          <a href="#" class="project-card__link">Voir le projet &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Projet 3 : Chat&GO -->
+      <article class="project-card reveal reveal--delay-2">
+        <div class="project-card__image">
+          <img src="images/projet 3 Chat&GO.jpg" alt="Chat&GO — Application de messagerie" />
+        </div>
+        <div class="project-card__body">
+          <div class="project-card__tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Mobile</span>
+          </div>
+          <h3>Chat&amp;GO</h3>
+          <p>Application de messagerie instantanée cross-platform avec conversations en temps réel, partage de médias et notifications push. Une expérience de communication rapide, intuitive et sécurisée.</p>
+          <a href="#" class="project-card__link">Voir le projet &rarr;</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- EXPÉRIENCE -->
+  <section class="experience" id="experience">
+    <div class="section-header section-header--center reveal">
+      <span class="badge badge--cyan-outline">Expérience</span>
+      <h2>Mon parcours professionnel</h2>
+      <p class="text-muted">Un fil conducteur entre ingénierie informatique de pointe et résolution de problèmes d'usage.</p>
+    </div>
+    <div class="experience__list">
+      <div class="experience__item reveal">
+        <div class="experience__date">
+          <span class="experience__period">2026 — Présent</span>
+          <span class="experience__company">Freelance</span>
+        </div>
+        <div class="experience__details">
+          <h3>Développeur Full-Stack &amp; Data/IA</h3>
+          <p>Conception et développement d'applications web/mobile, intégration de modèles ML, et création d'interfaces UI/UX pour divers clients.</p>
+        </div>
+      </div>
+      <div class="experience__item reveal reveal--delay-1">
+        <div class="experience__date">
+          <span class="experience__period">2026</span>
+          <span class="experience__company">Freelance</span>
+        </div>
+        <div class="experience__details">
+          <h3>Développeur Web &amp; Designer UI/UX</h3>
+          <p>Développement d'applications React, prototypage sur Figma, et mise en place de pipelines de données avec Power BI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMATION -->
+  <section class="education" id="formation">
+    <div class="section-header section-header--center reveal">
+      <span class="badge badge--cyan-outline">Formation</span>
+      <h2>Formations académiques et spécialisées</h2>
+    </div>
+    <div class="education__grid">
+      <div class="education__card reveal">
+        <div class="education__icon">
+          <svg width="24" height="24" fill="none" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+        </div>
+        <h3> Philosophie</h3>
+        <p class="education__institution">Université — Côte d'Ivoire</p>
+        <p class="text-muted">Rigueur analytique, logique formelle, éthique et pensée critique appliquées à la technologie.</p>
+      </div>
+      <div class="education__card reveal reveal--delay-1">
+        <div class="education__icon">
+          <svg width="24" height="24" fill="none" stroke="#070b13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+        </div>
+        <h3>Formation Développement &amp; Data/IA</h3>
+        <p class="education__institution">Formation spécialisée</p>
+        <p class="text-muted">Python, React, Machine Learning, SQL, Power BI, Git/GitHub, Figma et conception d'architectures full-stack.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testimonials" id="temoignages">
+    <div class="section-header section-header--center reveal">
+      <span class="badge badge--cyan-outline">Témoignages</span>
+      <h2>Ils m'ont fait confiance</h2>
+      <p class="text-muted">Quelques retours de professionnels sur nos collaborations techniques et créatives.</p>
+    </div>
+    <div class="testimonials__grid">
+      <div class="testimonial-card reveal">
+        <svg class="testimonial-card__quote" width="32" height="32" fill="none" stroke="#00f0ff" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5h-6v6h4c0 5.5-3 7-5 7zm14 0c3 0 7-1 7-8V5h-6v6h4c0 5.5-3 7-5 7z"/></svg>
+        <p>"Kinon Marc a su aborder notre problématique complexe d'intégration de données avec une rigueur logique impressionnante. Sa double compétence philosophie et technique change tout !"</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"></div>
+          <div>
+            <strong>Amadou Koné</strong>
+            <span>Directeur Technique, DataCorp</span>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal reveal--delay-1">
+        <svg class="testimonial-card__quote" width="32" height="32" fill="none" stroke="#00f0ff" stroke-width="2"><path d="M3 21c3 0 7-1 7-8V5h-6v6h4c0 5.5-3 7-5 7zm14 0c3 0 7-1 7-8V5h-6v6h4c0 5.5-3 7-5 7z"/></svg>
+        <p>"Un designer UI/UX exceptionnel doublé d'un excellent développeur. Les maquettes Figma créées étaient extrêmement intuitives et leur implémentation s'est faite sans friction."</p>
+        <div class="testimonial-card__author">
+          <div class="testimonial-card__avatar"></div>
+          <div>
+            <strong>Marie Bamba</strong>
+            <span>Chef de Projet, InnovaWeb</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact__info reveal">
+      <div class="section-header">
+        <span class="badge badge--cyan-outline">Contact</span>
+        <h2>Construisons quelque chose d'exceptionnel</h2>
+      </div>
+      <p class="text-muted">N'hésitez pas à me contacter pour échanger sur vos projets de développement d'applications, d'architectures de données, de systèmes prédictifs (IA) ou de design interactif.</p>
+      <ul class="contact__list">
+        <li>
+          <svg width="16" height="16" fill="none" stroke="#00f0ff" stroke-width="2"><path d="M2 4l6 5 6-5"/><rect x="1" y="3" width="14" height="10" rx="2"/></svg>
+          kinonouattara12151@gmail.com
+        </li>
+        <li>
+          <svg width="16" height="16" fill="none" stroke="#00f0ff" stroke-width="2"><path d="M14.05 10.34l-2.41-.7a1 1 0 0 0-1.05.27l-.87.87a12 12 0 0 1-4.5-4.5l.88-.87a1 1 0 0 0 .26-1.05l-.7-2.41A1 1 0 0 0 4.68 1H2.26A1 1 0 0 0 1.27 2 14 14 0 0 0 14 14.73a1 1 0 0 0 1-1v-2.42a1 1 0 0 0-.95-.97z"/></svg>
+          +225 07 98 50 22 64 / 07 67 60 62 03
+        </li>
+        <li>
+          <svg width="16" height="16" fill="none" stroke="#00f0ff" stroke-width="2"><path d="M12 6.5c0 4-4.5 7.5-4.5 7.5S3 10.5 3 6.5a4.5 4.5 0 1 1 9 0z"/><circle cx="7.5" cy="6.5" r="1.5"/></svg>
+          Abidjan, Côte d'Ivoire
+        </li>
+      </ul>
+    </div>
+    <form class="contact__form reveal reveal--delay-1" id="contactForm">
+      <h3>Envoyer un message direct</h3>
+      <input type="text" placeholder="Votre nom complet" required />
+      <input type="email" placeholder="Votre email" required />
+      <textarea rows="4" placeholder="Votre message..." required></textarea>
+      <button type="submit" class="btn btn--primary btn--full">Envoyer le message</button>
+      <p class="contact__form-feedback" id="formFeedback"></p>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>&copy; 2026 OUATTARA Kinon Marc Désiré. Tous droits réservés.</p>
+      <div class="footer__socials">
+        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" fill="#94a3b8"><path d="M16 0H4a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h12a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zM7 16H4.5V8H7v8zM5.75 6.9a1.44 1.44 0 1 1 0-2.88 1.44 1.44 0 0 1 0 2.88zM16 16h-2.5v-4.1c0-1.22-.44-2.05-1.53-2.05-.83 0-1.33.56-1.55 1.1-.08.2-.1.47-.1.74V16H7.84V8h2.4v1.1c.32-.5 1.1-1.22 2.48-1.22 1.82 0 3.28 1.2 3.28 3.74V16z"/></svg></a>
+        <a href="#" aria-label="GitHub"><svg width="20" height="20" fill="#94a3b8"><path d="M10 0C4.48 0 0 4.48 0 10c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.1-1.47-1.1-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.03A9.56 9.56 0 0 1 10 4.84c.85.004 1.7.114 2.5.34 1.9-1.3 2.75-1.03 2.75-1.03.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.16.58.68.48A10.02 10.02 0 0 0 20 10c0-5.52-4.48-10-10-10z"/></svg></a>
+        <a href="#" aria-label="Twitter"><svg width="20" height="20" fill="#94a3b8"><path d="M20 3.8a8.2 8.2 0 0 1-2.36.65A4.12 4.12 0 0 0 19.45 2.2a8.2 8.2 0 0 1-2.6 1A4.1 4.1 0 0 0 9.75 7a11.65 11.65 0 0 1-8.46-4.29 4.1 4.1 0 0 0 1.27 5.48A4.07 4.07 0 0 1 .8 7.7v.05a4.1 4.1 0 0 0 3.29 4.02 4.1 4.1 0 0 1-1.85.07 4.11 4.11 0 0 0 3.83 2.85A8.23 8.23 0 0 1 0 16.41a11.62 11.62 0 0 0 6.29 1.84A11.58 11.58 0 0 0 17.96 6.58l-.01-.53A8.28 8.28 0 0 0 20 3.8z"/></svg></a>
+        <a href="#" aria-label="Dribbble"><svg width="20" height="20" fill="#94a3b8"><path d="M10 0a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm6.6 4.64a8.5 8.5 0 0 1 1.9 5.08c-.28-.05-3.05-.62-5.84-.27a12.5 12.5 0 0 0-.51-1.14c3.14-1.28 4.26-3.13 4.45-3.67zM10 1.5a8.47 8.47 0 0 1 5.75 2.25c-.16.5-1.17 2.25-4.18 3.37A48.4 48.4 0 0 0 8 1.63 8.47 8.47 0 0 1 10 1.5zM6.38 2.2a48.3 48.3 0 0 1 3.56 5.85A32.8 32.8 0 0 1 1.6 9.34 8.52 8.52 0 0 1 6.38 2.2zM1.5 10v-.25c.18 0 5.27.08 9.73-1.24.27.53.53 1.07.77 1.61-3.47.98-6.63 3.7-7.82 5.93A8.46 8.46 0 0 1 1.5 10zm3.45 7.56c.82-1.64 3.6-4.55 7.43-5.74a33.3 33.3 0 0 1 2 7.2A8.47 8.47 0 0 1 4.95 17.56zm10.44-1.05a33.3 33.3 0 0 0-1.79-6.68c2.57-.41 4.85.25 5.15.34a8.49 8.49 0 0 1-3.36 6.34z"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Retour en haut">
+    <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M10 16V4M4 10l6-6 6 6"/></svg>
+  </button>
+
+  <script src="main.js"></script>
+</body>
+</html>
