@@ -529,3 +529,28 @@ section {
   0%, 100% { opacity: 1; }
   50%       { opacity: .35; }
 }
+
+/* ===== FIX IMAGES — garantit l'affichage dans tous les conteneurs ===== */
+.hero__image-placeholder,
+.about__image-placeholder,
+.differentiation__image-placeholder {
+  overflow: hidden;
+  line-height: 0; /* supprime l'espace sous l'img */
+}
+
+.hero__image-placeholder img,
+.about__image-placeholder img,
+.differentiation__image-placeholder img,
+.project-card__image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  min-height: 1px; /* force le rendu même si la hauteur est 0 */
+}
+
+/* Fix : si le conteneur n'a pas de hauteur explicite, les images disparaissent */
+.about__image-placeholder  { height: 300px; }
+.differentiation__image-placeholder { height: 360px; }
+.project-card__image       { height: 200px; }
